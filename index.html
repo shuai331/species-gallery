@@ -58,9 +58,9 @@
       --rule: #b8bfa8;
       --accent: #2f5c2b;
       --accent2: #e0e5d4;
-      --font-display: 'CrimsonPro', Georgia, 'Times New Roman', serif;
-      --font-body: system-ui, -apple-system, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
-      --font-mono: 'DMMono', 'Courier New', monospace;
+      --font-display: 'CrimsonPro', 'PingFang SC', 'STSong', 'Noto Serif SC', Georgia, 'Times New Roman', serif;
+      --font-body: -apple-system, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans SC', 'Segoe UI', system-ui, sans-serif;
+      --font-mono: 'DMMono', 'SF Mono', 'Courier New', monospace;
       --max: 1200px;
       --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
       --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
@@ -401,7 +401,8 @@
       line-height: 1.05;
       margin: 0 0 1.5rem;
       color: #fff;
-      letter-spacing: -0.02em;
+      letter-spacing: 0.02em;
+      font-feature-settings: 'kern' 1, 'liga' 1;
     }
     .hero-line {
       display: block;
@@ -570,6 +571,8 @@
       position: relative;
       display: inline-block;
       padding-bottom: 1rem;
+      letter-spacing: 0.04em;
+      font-feature-settings: 'kern' 1;
     }
     .section-title::after {
       content: '';
@@ -601,6 +604,8 @@
       line-height: 1.35;
       margin: 0 0 0.6rem;
       color: var(--ink);
+      letter-spacing: 0.03em;
+      font-feature-settings: 'kern' 1;
     }
 
     p { margin-bottom: 1.25rem; }
